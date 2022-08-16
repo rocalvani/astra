@@ -1,0 +1,1048 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Playfair+Display:ital@0;1&display=swap');
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.body {
+  background-color: black;
+  background-image: url(../img/bgimg_1-8.png);
+  background-size: auto 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* HEADER */
+
+.header {
+  padding: 2rem 4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  grid-area: header;
+}
+
+.header img {
+  height: 3rem;
+}
+
+.header ul, .footer ul {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-family: lato;
+  height: 3rem;
+}
+
+.header li,
+footer li {
+  margin: 0rem 1.5rem;
+}
+
+/* MAIN */
+
+.subSite {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.margined {
+  margin: 0rem 9rem;
+  color: white;
+  font-family: lato;
+  font-weight: 100;
+}
+
+.margined h1 {
+  font-size: 3rem;
+}
+
+/* INDEX */
+
+.mainImg {
+  background-image: url(../img/astra-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cards {
+  padding-top: 550px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 70%;
+  color: white;
+  font-family: lato;
+  font-weight: 100;
+  width: 87%;
+  margin: auto;
+}
+
+
+.cardContainer {
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+.cardContainerLink {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width:50%;
+  text-align: right;
+}
+
+.cardContainerLink img {
+  height: 8rem;
+  margin-left: 2rem;
+}
+
+
+.ticketButton {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end
+}
+
+.cardsDesc {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 5rem 6rem 10rem 6rem;
+}
+
+.desc {
+  color: white;
+  font-family: lato;
+  font-weight: 100;
+  width: 23%;
+  padding: 12rem 3rem 3rem 3rem;
+  border: 1px solid #1c6966;
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url(../img/b01-8.png);
+  background-size: cover;
+  background-repeat:repeat;
+}
+
+.desc img {
+  margin-bottom: 4rem;
+}
+
+.desc p {
+  font-size: 0.9rem;
+}
+
+.subscribe {
+  color: white;
+  margin: 8rem auto;
+  width: 87%;
+  font-family: lato;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.subscribeText {
+  Font-size: 3rem;
+  font-weight: 100;
+  width: 50%;
+}
+
+.subscribeText p {
+  font-size: 1.3rem;
+}
+
+.subscribeForm {
+  font-weight: 100;
+  font-size: 1.2rem;
+  width: 50%;
+  color:white;
+  font-family: lato;
+  grid-area: subscribeForm;
+}
+
+.mainInput {
+  background-color: black;
+  border-bottom: 1px solid darkgray;
+  padding: 1rem;
+  color: gray;
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 1rem;
+}
+
+.inputSubmit {
+  background-color: black;
+  border: 0px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: lato;
+}
+
+/* AGENDA */
+
+.agendaTitle {
+  text-align: center;
+  font-family: playfair display;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.agendaInfo {
+  color: white;
+  font-family: lato;
+  font-weight: 100; 
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.agendaMes, .agendaDia {
+  border-top: 1px solid white;
+  padding: 2rem;
+  width: 20%;
+  margin: 5rem 0rem;
+}
+
+.agendaDia p {
+  font-size: 0.8rem;
+}
+
+.stickerSold {
+  Background-color: #c2aa7a;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 400;
+  position: relative;
+  left: 65%;
+  top: -80px;
+  text-align:center;
+  vertical-align:middle;
+  line-height: 80px;
+}
+
+/* FAQ */
+
+.preguntas {
+  margin-top: 2rem;
+  align-items: baseline;
+}
+
+.faq {
+  width: 25%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  height: auto;
+  position: sticky; 
+  top: 15%;
+}
+
+.faq ul {
+  padding: 1rem;
+  list-style: none;
+  margin: 0 0 2rem 0;
+}
+
+.faq li {
+  margin: 0 0 0.5rem 0;
+  background-color: #050511;
+  padding: 1rem;
+}
+
+.faq li:hover {
+  background-color: #c2aa7a;
+  transition: 1s;
+}
+
+.questionContainer {
+  width: 72%;
+}
+
+.question {
+  border-top: 1px solid white;
+  padding: 3rem 0rem;
+}
+
+.faqImg {
+  height: 20rem;
+  background-image: url(../img/faqimg.jpeg);
+  background-position: center;
+  color: white;
+  font-family: playfair display;
+  line-height: 20rem;
+  text-align:center;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.contactSection {
+  background-color: #030516;
+  padding: 5rem 0rem;
+}
+
+.contactSection h3 {
+  font-weight: regular;
+}
+
+/* CONTACT */
+
+.bodyContainer {
+  display: grid; 
+  grid-template-columns: 50vw 50vw; 
+  grid-template-rows: 13vh 77vh 10vh; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header"
+    "formImage contactForm"
+    "footer footer"; 
+  align-content: center; 
+  align-items: center; 
+}
+
+.contactForm {
+  grid-area: contactForm;
+  padding: 9rem;
+}
+
+.formImage {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 77vh;
+  grid-area: formImage;
+}
+
+.shortInput {
+  width: 49.6%;
+}
+
+.commentInput {
+  border: 1px solid white;
+}
+
+.siteTitle {
+  color: white;
+  font-family: lato;
+  font-weight: 100;
+  font-size: 2rem;
+
+}
+
+/* MERCH */
+
+.merchImg {
+  height: 30rem;
+  color: white;
+  font-family: playfair display;
+  line-height: 30rem;
+  font-size: 3rem;
+  background-image: url(../img/merchmain.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  text-transform: lowercase;
+  font-style: italic; 
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 30rem;
+}
+
+.item {
+  color: white;
+  font-family: lato;
+}
+
+.imageContainer {
+  width: 100%;
+  overflow: hidden;
+  height: 60vh;
+}
+
+.mini {
+  height: 25vh;
+}
+
+.mini img {
+  margin: -50% 0;
+}
+
+.item img {
+  width: 100%;
+  transition: transform .2s;
+}
+
+.item img:hover {
+  transform: scale(1.5);
+}
+
+.merchInfo {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: black;
+  color:rgb(157, 157, 157)
+}
+
+.merchInfo b {
+  color: white;
+}
+
+.prod1 { 
+  grid-area: prod1; 
+}
+.prod2 { 
+  grid-area: prod2;
+}
+.prod3 { 
+  grid-area: prod3;
+}
+.prod4 { 
+  grid-area: prod4; 
+}
+.prod5 { 
+  grid-area: prod5; 
+}
+.prod6 { 
+  grid-area: prod6; 
+}
+.prod7 { 
+  grid-area: prod7; 
+}
+.prod8 { 
+  grid-area: prod8;
+ }
+.prod9 { 
+  grid-area: prod9; 
+}
+
+.gridContainer {
+  width: 93%;
+  margin: 8vh auto;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(5, auto) ; 
+  gap: 1rem; 
+  grid-template-areas: 
+    "prod1 prod2 prod3"
+    "prod1 prod4 prod3"
+    "prod5 prod4 prod6"
+    "prod5 prod7 prod6"
+    "prod8 prod7 prod9"; 
+}
+
+.item button {
+  background-color: transparent;
+  color: white;
+  font-family: lato;
+  border: 1px solid #c2aa7a;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.8rem;
+  background-image: url(../img/b01-8.png);
+  background-size: cover;
+}
+
+/* FOOTER */
+
+.footer {
+  font-family: lato;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: white;
+  margin: 0rem 7rem;
+  padding: 1.3rem 1.3rem 0rem 1.3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: footer;
+}
+
+.footer li {
+  margin: 1rem 2rem;
+}
+
+.footer img {
+  width: 100%;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 768px) {
+
+  /* GENERAL */
+
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    text-align:center;
+  }
+
+  .header ul, .footer ul {
+    flex-direction: column;
+  }
+
+  .header li, .footer li {
+    margin: 0.2rem;
+  }
+
+  .footer {
+    margin: 0;
+    padding: 2rem;
+    flex-direction: column;
+    text-align:center;
+  }
+
+  .footer ul {
+    align-content: center;
+  }
+
+  .margined {
+    width:80%;
+    margin:auto;
+  }
+
+  .subSite {
+    flex-direction: column;
+  }
+
+  /*INDEX */
+
+  .cards {
+    padding: 0;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: 80%;
+  }
+
+  .cardContainer {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    width: 100%;
+  }
+
+  .cardContainerLink {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    line-height: 1.3rem;
+  }
+  
+  .cardContainerLink img {
+    height: 4rem;
+  }
+
+  .cardContainer, .cardContainerLink {
+    padding: 0rem ;
+  }
+
+  .cardsDesc {
+    width:92%;
+    margin: 3rem auto 0rem auto;
+  }
+
+  .desc {
+    width:92%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+
+  .desc p {
+    font-size: 0.8rem;
+  }
+
+  .desc img {
+    height: 3rem;
+  }
+
+  .subscribe {
+    width: 85%;
+    margin: auto;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .subscribeText {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .subscribe p {
+    font-size: 1rem;
+  }
+
+  .subscribeForm {
+    width: 100%;
+    padding: 0;
+    margin-top: 1.6rem;
+  }
+
+
+   /* FAQ */
+
+  .faq {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.6rem;
+    position: static;
+  }
+
+  .faq ul {
+    margin-bottom: 0;
+  }
+
+  .faq li {
+    padding: 0.6rem;
+  }
+
+  .questionContainer {
+    width:100%;
+    margin-top: 0;
+  }
+
+  .question {
+    padding: 2rem 0rem;
+    font-size: 0.8rem;
+  }
+
+  .question iframe {
+    height: 20vh;
+  }
+
+  .contactSection {
+    padding: 2rem 0rem;
+  }
+
+
+  /* CONTACTO */
+
+  .bodyContainer {
+    display: grid; 
+    grid-template-columns: 100vw;
+    grid-template-rows: auto 40vh auto auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "formImage"
+      "contactForm"
+      "footer"; 
+    align-content: center; 
+    align-items: center; 
+  }
+
+  .formImage {
+    height: 40vh;
+  }
+
+  .contactForm {
+    padding: 1.7rem;
+  }
+
+  .siteTitle {
+    font-size: 2rem;
+  }
+
+  .shortInput {
+    width: 49%;
+  }
+
+  /* MERCH */
+
+  .mainImg {
+    height: 25vh;
+    line-height: 25vh;
+    font-size: 1rem;
+  }
+
+  .gridContainer {
+    width: 85%;
+    margin: 8vh auto;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: repeat(2, 50%); 
+    grid-template-rows: repeat(8, auto) ; 
+    gap: 1rem; 
+    grid-template-areas: 
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8"; 
+  }
+
+  .prod9 {
+    display: none;
+  }
+
+  .merchInfo {
+    flex-direction: column;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .merchInfo button {
+    font-size: 0.7rem;
+    margin-top: 2vh;
+  }
+
+  .imageContainer, .mini {
+   height: 26vh;
+  }
+
+  .imageContainer:hover {
+    transform: none;
+  }
+
+  .mini img {
+    margin: 0;
+  }
+
+  /* AGENDA */
+
+  .agendaInfo {
+    flex-direction: column;
+  }
+
+  .agendaMes, .agendaDia {
+    width: 100%;
+    height: auto;
+    margin:0;
+
+  }
+
+  .agendaMes {
+    border-top: 0;
+  }
+
+  .agendaMes h2 {
+    font-size: 2rem;
+  }
+
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* GENERAL */
+
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    text-align:center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .header li {
+    margin: 0.2rem;
+  }
+
+  .footer {
+    margin: 0;
+    padding: 2rem;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .footer ul {
+    font-size: 1rem;
+  }
+
+  .margined {
+    width:80%;
+    margin:auto;
+  }
+
+  .subSite {
+    flex-direction: column;
+  }
+
+  /*INDEX */
+
+  .cards {
+    padding: 0;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: 80%;
+  }
+
+  .cardContainer {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .cardContainerLink {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 0;
+    margin: 2rem 0rem 0rem 0rem;
+    line-height: 1.3rem;
+  }
+  
+  .cardContainerLink img {
+    height: 7rem;
+  }
+
+  .cardContainer, .cardContainerLink {
+    padding: 0rem ;
+  }
+
+  .cardsDesc {
+    width:92%;
+    margin: 9rem auto 0rem auto;
+  }
+
+  .desc {
+    width:92%;
+    padding: 3rem;
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+
+  .desc h3 {
+    font-size: 1.7rem;
+  }
+
+  .desc p {
+    font-size: 1.2rem;
+  }
+
+  .desc img {
+    height: 4rem;
+  }
+
+  .subscribe {
+    width: 85%;
+    margin: 2rem auto 0rem auto;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .subscribeText {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .subscribe p {
+    font-size: 1.5rem;
+  }
+
+  .subscribeForm {
+    width: 100%;
+    padding: 0;
+    margin-top: 1.6rem;
+  }
+
+
+   /* FAQ */
+
+  .faq {
+    width: 100%;
+    font-size: 1rem;
+    position: static;
+  }
+
+  .faq ul {
+    margin-bottom: 0;
+  }
+
+  .faq li {
+    padding: 1rem;
+  }
+
+  .questionContainer {
+    width:100%;
+    margin-top: 0;
+  }
+
+  .question {
+    padding: 2rem 0rem;
+    font-size: 1.4rem;
+  }
+
+  .question iframe {
+    height: 20vh;
+  }
+
+  .contactSection {
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+  }
+
+  .contactSection img {
+    height: 7rem;
+  }
+
+
+  /* CONTACTO */
+
+  .bodyContainer {
+    display: grid; 
+    grid-template-columns: 100vw;
+    grid-template-rows: auto 40vh auto auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "formImage"
+      "contactForm"
+      "footer"; 
+    align-content: center; 
+    align-items: center; 
+  }
+
+  .formImage {
+    height: 40vh;
+  }
+
+  .contactForm {
+    padding: 1.7rem;
+  }
+
+  .siteTitle {
+    font-size: 2rem;
+  }
+
+  .shortInput {
+    width: 49.5%;
+  }
+
+  /* MERCH */
+
+  .mainImg {
+    height: 30vh;
+    line-height: 30vh;
+    font-size: 1.5rem;
+  }
+
+  .gridContainer {
+    width: 85%;
+    margin: 8vh auto 1vh auto;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: repeat(2, 50%); 
+    grid-template-rows: repeat(8, auto) ; 
+    gap: 1rem; 
+    grid-template-areas: 
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8"; 
+  }
+
+  .prod9 {
+    display: none;
+  }
+
+  .merchInfo {
+    font-size: 0.9rem;
+  }
+
+  .merchInfo button {
+    font-size: 0.9rem;
+  }
+
+  .imageContainer, .mini {
+   height: 26vh;
+  }
+
+  .mini img {
+    margin: 0;
+  }
+
+
+  /* AGENDA */
+
+  .agendaInfo {
+    flex-direction: column;
+  }
+
+  .agendaMes, .agendaDia {
+    width: 100%;
+    height: auto;
+    margin:0;
+
+  }
+
+  .agendaMes {
+    border-top: 0;
+  }
+
+  .agendaMes h2 {
+    font-size: 2rem;
+  }
+  
+
+}
+
+@media (min-width: 1024px) and (max-width: 1715px) {
+
+  /* MERCH */
+  .imageContainer {
+    height: 30vh;
+   }
+
+   .mini {
+    height: 15vh;
+   }
+
+   .mini img {
+    margin: -30% 0;
+   }
+}
