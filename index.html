@@ -5,110 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Astra</title>
   </head>
 
   <body>
     <div class="body">
-    <!-- Encabezado -->
-    <header class="header">
-      <a href="./index.html"><img src="./img/logo.png" alt="astra" /></a>
-      <!-- Barra de navegación -->
-      <nav>
-        <ul>
-          <li><a href="./pages/about.html">Información</a></li>
-          <li><a href="./pages/agenda.html">Agenda</a></li>
-          <li><a href="./pages/merch.html">Merch</a></li>
-          <li><a href="./pages/contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- Fin barra navegación -->
-    </header>
-    <main>
-      <!-- Imagen main -->
-      <section class="mainImg">
-        <div class="cards">
-          <article class="cardContainer">
+      <!-- Encabezado -->
+      <header class="header">
+        <a href="./index.html"><img src="./img/logo.png" alt="astra" /></a>
+        <!-- Barra de navegación -->
+        <nav>
+          <ul>
+            <li><a href="./pages/about.html">Información</a></li>
+            <li><a href="./pages/agenda.html">Agenda</a></li>
+            <li><a href="./pages/merch.html">Merch</a></li>
+            <li><a href="./pages/contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Fin barra navegación -->
+      </header>
+      <main>
+        <!-- Imagen main -->
+        <section class="mainImg">
+          <div class="cards">
+            <article class="cardContainer">
+              <p>
+                Astra es un festival dedicado a los <br />
+                <b>cuerpos celestes y a las ciencias y artes que los rodean</b>.
+              </p>
+            </article>
+            <article class="cardContainerLink">
+              <a class="ticketButton" href="https://www.allaccess.com.ar/">
+                <p>Comprá tus entradas.</p>
+                <img src="./img/flecha.png" alt="Botón con forma de flecha" />
+              </a>
+            </article>
+          </div>
+        </section>
+        <!-- Fin imagen main -->
+        <!-- Cards -->
+        <section class="cardsDesc">
+          <article class="desc animate__animated animate__fadeInUp">
+            <img
+              src="./img/desc01.png"
+              alt="Luna en cuarto creciente con un anillo"
+            />
+            <h3>El final de todo</h3>
+            <br /><br />
             <p>
-              Astra es un festival dedicado a los <br>
-              <b>cuerpos celestes y a las ciencias y artes que los rodean</b>.
+              Dicen que todo se acaba con un agujero negro, pero, ¿qué hay de
+              cierto en eso? Conocé cómo se forman y lo que pasa si nos
+              acercamos mucho a uno de ellos. <b>Paul Rickets</b>, director del
+              observatorio de Utah, nos va a contar cómo los afecta la gravedad,
+              cómo los detectamos y como afectan las lecturas del
+              espacio-tiempo.
             </p>
           </article>
-          <article class="cardContainerLink">
-            <a class="ticketButton" href="https://www.allaccess.com.ar/">
-              <p>Comprá tus entradas.</p>
-              <img src="./img/flecha.png" alt="Botón con forma de flecha" />
-            </a>
-            </article>
-        </div>
-      </section>
-      <!-- Fin imagen main -->
-      <!-- Cards -->
-      <section class="cardsDesc">
-        <article class="desc">
-          <img src="./img/desc01.png" alt="Luna en cuarto creciente con un anillo" />
-          <h3>El final de todo</h3>
-          <br><br>
-          <p>
-            Dicen que todo se acaba con un agujero negro, pero, ¿qué hay de cierto en eso? Conocé cómo se forman y lo que pasa si nos acercamos mucho a uno de ellos. <b>Paul Rickets</b>, director del observatorio de Utah, nos va a contar cómo los afecta la gravedad, cómo los detectamos y como afectan las lecturas del espacio-tiempo. 
-          </p>
-        </article>
-        <article class="desc">
-          <img src="./img/dec03-8.png" alt="Constelación" />
-          <h3>Viaje a las estrellas</h3>
-          <br><br>
-          <p>
-            Conocé constelaciones y hacé un viaje por las estrellas con la participación de <b>Dean Regas</b> del Observatorio de Cincinnati visitando nuestro país por primera vez.
-          </p>
-        </article>
-        <article class="desc">
-          <img src="./img/dec02-8.png" alt="Estrella flotando sobre una mano" />
-          <h3>Espacio/Tiempo & Acción</h3>
-          <br><br>
-          <p>
-            ¿Qué tan cerca está la astrología de la ciencia? ¿Qué puede decirnos sobre los movimientos de cuerpos celestes y cuál es nuestra conexión con el cosmos? 
-          </p>
-        </article>
-        <article class="desc">
-          <img src="./img/dec04-8.png" alt="Planeta con órbita" />
-          <h3>El poder de los planetas</h3>
-          <br><br>
-          <p>
-            Cuando la ciencia se conecta con las artes, suceden mil cosas. Con algunas, podés intentar decifrar señales del futuro. Conocé más sobre la geomancia, la alquimia y el efecto de la luna sobre nosotros.
-          </p>
-        </article>
-      </section>
-      <!-- Fin cards -->
-      <!-- Comienza suscripción -->
-      <section class="subscribe">
-        <div class="subscribeText">
-          <h3>¿Querés recibir <br> más noticias?</h3>
-          <br>
-          <p>Inscribite a nuestro newsletter y enterate todas las noticias y actualizaciones que necesitás antes que nadie. </p>
-        </div>
-        <div class="subscribeForm">
-          <form action="#" method="get">
-            <label for="nombre">Mi nombre es...</label><br>
-          <input type="text" name="nombre" class="mainInput"><br><br>
-          <label for="email">Contactame en...</label><br>
-          <input type="email" name="email" class="mainInput" required><br><br>
-          <input type="submit" value="Enviar" class="inputSubmit">
-        </form>
-      </div>
-      </section>
-      <!-- Fin suscripción-->
-    </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <span>&copy; rocalvani entertainment. 2022.</span>
-      <ul>
-        <li><a href="http://twitter.com/">Twitter</a></li>
-        <li><a href="http://facebook.com/">Facebook</a></li>
-        <li><a href="http://instagram.com/">Instagram</a></li>
-      </ul>
-    </footer>
-    <!-- Fin footer -->
-  </div>
+          <article class="desc animate__animated animate__fadeInUp">
+            <img src="./img/dec03-8.png" alt="Constelación" />
+            <h3>Viaje a las estrellas</h3>
+            <br /><br />
+            <p>
+              Conocé constelaciones y hacé un viaje por las estrellas con la
+              participación de <b>Dean Regas</b> del Observatorio de Cincinnati
+              visitando nuestro país por primera vez.
+            </p>
+          </article>
+          <article class="desc animate__animated animate__fadeInUp">
+            <img
+              src="./img/dec02-8.png"
+              alt="Estrella flotando sobre una mano"
+            />
+            <h3>Espacio/Tiempo & Acción</h3>
+            <br /><br />
+            <p>
+              ¿Qué tan cerca está la astrología de la ciencia? ¿Qué puede
+              decirnos sobre los movimientos de cuerpos celestes y cuál es
+              nuestra conexión con el cosmos?
+            </p>
+          </article>
+          <article class="desc animate__animated animate__fadeInUp">
+            <img src="./img/dec04-8.png" alt="Planeta con órbita" />
+            <h3>El poder de los planetas</h3>
+            <br /><br />
+            <p>
+              Cuando la ciencia se conecta con las artes, suceden mil cosas. Con
+              algunas, podés intentar decifrar señales del futuro. Conocé más
+              sobre la geomancia, la alquimia y el efecto de la luna sobre
+              nosotros.
+            </p>
+          </article>
+        </section>
+        <!-- Fin cards -->
+        <!-- Comienza suscripción -->
+        <section class="subscribe animate__animated animate__fadeInUp">
+          <div class="subscribeText">
+            <h3>
+              ¿Querés recibir <br />
+              más noticias?
+            </h3>
+            <br />
+            <p>
+              Inscribite a nuestro newsletter y enterate todas las noticias y
+              actualizaciones que necesitás antes que nadie.
+            </p>
+          </div>
+          <div class="subscribeForm">
+            <form action="#" method="get">
+              <label for="nombre">Mi nombre es...</label><br />
+              <input type="text" name="nombre" class="mainInput" /><br /><br />
+              <label for="email">Contactame en...</label><br />
+              <input
+                type="email"
+                name="email"
+                class="mainInput"
+                required
+              /><br /><br />
+              <input type="submit" value="Enviar" class="inputSubmit" />
+            </form>
+          </div>
+        </section>
+        <!-- Fin suscripción-->
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <span>&copy; rocalvani entertainment. 2022.</span>
+        <ul>
+          <li><a href="http://twitter.com/">Twitter</a></li>
+          <li><a href="http://facebook.com/">Facebook</a></li>
+          <li><a href="http://instagram.com/">Instagram</a></li>
+        </ul>
+      </footer>
+      <!-- Fin footer -->
+    </div>
   </body>
 </html>
