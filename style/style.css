@@ -19,6 +19,10 @@ a {
   color: white;
 }
 
+a:hover {
+  color: white;
+}
+
 /* HEADER */
 
 .header {
@@ -38,7 +42,7 @@ a {
   height: 3rem;
 }
 
-.header ul, .footer ul {
+.footer ul {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -51,9 +55,29 @@ a {
   height: 3rem;
 }
 
-.header li,
-footer li {
+.footer li {
   margin: 0rem 1.5rem;
+}
+
+.navbar { 
+  width: 100%;
+  --bs-navbar-toggler-border-color: #c2aa7a;
+}
+
+.nav-item a, .nav-item a:hover {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-family: lato;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../img/toggle-02.png);
 }
 
 /* MAIN */
@@ -133,7 +157,8 @@ footer li {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: center;
-  margin: 5rem 6rem 10rem 6rem;
+  width: 90%;
+  margin: auto;
 }
 
 .desc {
@@ -141,7 +166,7 @@ footer li {
   font-family: lato;
   font-weight: 100;
   width: 23%;
-  padding: 12rem 3rem 3rem 3rem;
+  padding: 10rem 2rem 2rem 2rem;
   border: 1px solid #1c6966;
   border-radius: 20px;
   overflow: hidden;
@@ -173,6 +198,10 @@ footer li {
   Font-size: 3rem;
   font-weight: 100;
   width: 40%;
+}
+
+.subscribeText h3 {
+  font-size: 4rem;
 }
 
 .subscribeText p {
@@ -509,39 +538,40 @@ footer li {
   margin: 1rem 2rem;
 }
 
-.footer img {
-  width: 100%;
-}
-
 /* RESPONSIVE MOBILE */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   /* GENERAL */
 
   .header {
-    padding: 1rem;
-    flex-direction: column;
-    text-align:center;
+    padding: 3vh;
   }
 
-  .header ul, .footer ul {
-    flex-direction: column;
-  }
-
-  .header li, .footer li {
-    margin: 0.2rem;
+  .navbar-nav {
+    text-align:right;
   }
 
   .footer {
     margin: 0;
-    padding: 2rem;
+    width: 85%;
+    margin:auto;
     flex-direction: column;
     text-align:center;
   }
 
   .footer ul {
     align-content: center;
+    height: auto;
+    padding: 0;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .footer li {
+    margin: 0; 
+    padding: 0;
   }
 
   .margined {
@@ -555,22 +585,30 @@ footer li {
 
   /*INDEX */
 
+  .mainIndex {
+    background-image: url(../img/mobileheader-03.png)!important;
+    background-size: 100%;
+    height: 45vh!important;
+  }
+
   .cards {
     padding: 0;
     flex-direction: column;
     position: relative;
     margin: auto;
-    width: 80%;
+    width: 85%;
+    top: 0;
+    height: 45vh;
+    justify-content: flex-end
   }
 
   .cardContainer {
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 3vh;
+    line-height: 3vh;
     width: 100%;
   }
 
   .cardContainerLink {
-    font-size: 1rem;
     width: 100%;
     padding: 0;
     margin:0;
@@ -579,35 +617,57 @@ footer li {
   
   .cardContainerLink img {
     height: 4rem;
+    margin: 0;
   }
 
   .cardContainer, .cardContainerLink {
     padding: 0rem ;
   }
 
+  .ticketButton {
+    flex-direction: column-reverse;
+    align-content: center;
+    background-color: #c2aa7a;
+    padding: 1rem;
+    margin:0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.5vh;
+    border-radius: 10rem;
+    margin-top: 1rem;
+  }
+
+  .ticketButton p {
+    margin-bottom: 0;
+  }
+
+  .ticketButton img {
+    display:none;
+  }
+
   .cardsDesc {
     width:92%;
-    margin: 3rem auto 0rem auto;
+    margin: 1rem auto 0rem auto;
   }
 
   .desc {
     width:92%;
-    padding: 1.5rem;
+    padding: 3rem;
     font-size: 1rem;
-    margin: 1rem auto;
+    margin: .5rem auto;
   }
 
   .desc p {
-    font-size: 0.8rem;
+    font-size: 1.7vh;
   }
 
   .desc img {
-    height: 3rem;
+    height: 5vh;
   }
 
   .subscribe {
     width: 85%;
-    margin: auto;
+    margin: 3vh auto;
     padding: 0;
     flex-direction: column;
   }
@@ -617,14 +677,19 @@ footer li {
     width: 100%;
   }
 
+  .subscribeText h3 {
+    font-size: 5vh;
+  }
+
   .subscribe p {
-    font-size: 1rem;
+    font-size: 2.2vh;
   }
 
   .subscribeForm {
     width: 100%;
     padding: 0;
     margin-top: 1.6rem;
+    font-size: 2vh;
   }
 
 
@@ -768,281 +833,4 @@ footer li {
     font-size: 2rem;
   }
 
-}
-
-/* RESPONSIVE MOBILE */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  /* GENERAL */
-
-  .header {
-    padding: 1rem;
-    flex-direction: column;
-    text-align:center;
-  }
-
-  .header ul {
-    flex-direction: column;
-    font-size: 1rem;
-  }
-
-  .header li {
-    margin: 0.2rem;
-  }
-
-  .footer {
-    margin: 0;
-    padding: 2rem;
-    flex-direction: column;
-    font-size: 1rem;
-  }
-
-  .footer ul {
-    font-size: 1rem;
-  }
-
-  .margined {
-    width:80%;
-    margin:auto;
-  }
-
-  .subSite {
-    flex-direction: column;
-  }
-
-  /*INDEX */
-
-  .cards {
-    padding: 0;
-    flex-direction: column;
-    position: relative;
-    margin: auto;
-    width: 80%;
-  }
-
-  .cardContainer {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    width: 100%;
-  }
-
-  .cardContainerLink {
-    font-size: 1.6rem;
-    width: 100%;
-    padding: 0;
-    margin: 2rem 0rem 0rem 0rem;
-    line-height: 1.3rem;
-  }
-  
-  .cardContainerLink img {
-    height: 7rem;
-  }
-
-  .cardContainer, .cardContainerLink {
-    padding: 0rem ;
-  }
-
-  .cardsDesc {
-    width:92%;
-    margin: 9rem auto 0rem auto;
-  }
-
-  .desc {
-    width:92%;
-    padding: 3rem;
-    font-size: 1rem;
-    margin: 1rem auto;
-  }
-
-  .desc h3 {
-    font-size: 1.7rem;
-  }
-
-  .desc p {
-    font-size: 1.2rem;
-  }
-
-  .desc img {
-    height: 4rem;
-  }
-
-  .subscribe {
-    width: 85%;
-    margin: 2rem auto 0rem auto;
-    padding: 0;
-    flex-direction: column;
-  }
-
-  .subscribeText {
-    font-size: 2.5rem;
-    width: 100%;
-  }
-
-  .subscribe p {
-    font-size: 1.5rem;
-  }
-
-  .subscribeForm {
-    width: 100%;
-    padding: 0;
-    margin-top: 1.6rem;
-  }
-
-
-   /* FAQ */
-
-  .faq {
-    width: 100%;
-    font-size: 1rem;
-    position: static;
-  }
-
-  .faq ul {
-    margin-bottom: 0;
-  }
-
-  .faq li {
-    padding: 1rem;
-  }
-
-  .questionContainer {
-    width:100%;
-    margin-top: 0;
-  }
-
-  .question {
-    padding: 2rem 0rem;
-    font-size: 1.4rem;
-  }
-
-  .question iframe {
-    height: 20vh;
-  }
-
-  .contactSection {
-    padding: 2rem 0rem;
-    font-size: 1.5rem;
-  }
-
-  .contactSection img {
-    height: 7rem;
-  }
-
-
-  /* CONTACTO */
-
-  .bodyContainer {
-    display: grid; 
-    grid-template-columns: 100vw;
-    grid-template-rows: auto 40vh auto auto; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "header"
-      "formImage"
-      "contactForm"
-      "footer"; 
-    align-content: center; 
-    align-items: center; 
-  }
-
-  .formImage {
-    height: 40vh;
-  }
-
-  .contactForm {
-    padding: 1.7rem;
-  }
-
-  .siteTitle {
-    font-size: 2rem;
-  }
-
-  .shortInput {
-    width: 49.5%;
-  }
-
-  /* MERCH */
-
-  .mainImg {
-    height: 30vh;
-    line-height: 30vh;
-    font-size: 1.5rem;
-  }
-
-  .gridContainer {
-    width: 85%;
-    margin: 8vh auto 1vh auto;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: repeat(2, 50%); 
-    grid-template-rows: repeat(8, auto) ; 
-    gap: 1rem; 
-    grid-template-areas: 
-    "prod1 prod2"
-    "prod3 prod4"
-    "prod5 prod6"
-    "prod7 prod8"; 
-  }
-
-  .prod9 {
-    display: none;
-  }
-
-  .merchInfo {
-    font-size: 0.9rem;
-  }
-
-  .merchInfo button {
-    font-size: 0.9rem;
-  }
-
-  .imageContainer, .mini {
-   height: 26vh;
-  }
-
-  .mini img {
-    margin: 0;
-  }
-
-
-  /* AGENDA */
-
-  .agendaInfo {
-    flex-direction: column;
-  }
-
-  .agendaMes, .agendaDia {
-    width: 100%;
-    height: auto;
-    margin:0;
-
-  }
-
-  .agendaMes {
-    border-top: 0;
-  }
-
-  .agendaMes h2 {
-    font-size: 2rem;
-  }
-  
-
-}
-
-@media (min-width: 1024px) and (max-width: 1715px) {
-
-  /* MERCH */
-  .imageContainer {
-    height: 30vh;
-   }
-
-   .mini {
-    height: 15vh;
-   }
-
-   .mini img {
-    margin: -30% 0;
-   }
 }
