@@ -23,6 +23,10 @@ a:hover {
   color: white;
 }
 
+h1 { 
+  line-height: inherit;
+}
+
 /* HEADER */
 
 .header {
@@ -92,7 +96,8 @@ a:hover {
 }
 
 .margined {
-  margin: 0rem 9rem;
+  width: 85%;
+  margin:auto;
   color: white;
   font-family: lato;
   font-weight: 100;
@@ -111,14 +116,14 @@ a:hover {
 }
 
 .cards {
-  padding-top: 550px;
+  height: 85vh;
   padding-bottom: 30px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-content: flex-end;
   align-items: center;
   position: relative;
-  top: 70%;
   color: white;
   font-family: lato;
   font-weight: 100;
@@ -296,7 +301,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   height: auto;
   position: sticky; 
   top: 15%;
@@ -325,8 +330,9 @@ a:hover {
 
 .question {
   border-top: 1px solid white;
-  padding: 3rem 0rem;
+  padding: 1.5rem 0rem;
 }
+
 
 .faqImg {
   height: 20rem;
@@ -344,10 +350,42 @@ a:hover {
 .contactSection {
   background-color: #030516;
   padding: 5rem 0rem;
+  margin-top: 2rem;
 }
 
 .contactSection h3 {
   font-weight: regular;
+}
+
+.accordion-button {
+  color: white;
+  background-color: transparent;
+  font-family: playfair display;
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+.accordion-body {
+  color: white;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/arrowhead-05.png);
+}
+
+.accordion-button::after {
+  background-image: url(../img/arrowhead-04.png);
 }
 
 /* CONTACT */
@@ -355,7 +393,7 @@ a:hover {
 .bodyContainer {
   display: grid; 
   grid-template-columns: 50vw 50vw; 
-  grid-template-rows: 13vh 77vh 10vh; 
+  grid-template-rows: auto auto 10vh; 
   gap: 0px 0px; 
   grid-template-areas: 
     "header header"
@@ -367,14 +405,14 @@ a:hover {
 
 .contactForm {
   grid-area: contactForm;
-  padding: 9rem;
+  padding: 0 3rem;
 }
 
 .formImage {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 77vh;
+  height: 80vh;
   grid-area: formImage;
 }
 
@@ -696,10 +734,7 @@ a:hover {
    /* FAQ */
 
   .faq {
-    width: 100%;
-    padding: 0.4rem;
-    font-size: 0.6rem;
-    position: static;
+    display:none;
   }
 
   .faq ul {
@@ -716,7 +751,7 @@ a:hover {
   }
 
   .question {
-    padding: 2rem 0rem;
+    padding:0rem;
     font-size: 0.8rem;
   }
 
@@ -770,14 +805,14 @@ a:hover {
   }
 
   .gridContainer {
-    width: 85%;
+    width: 82%;
     margin: 8vh auto;
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
     grid-template-columns: repeat(2, 50%); 
     grid-template-rows: repeat(8, auto) ; 
-    gap: 1rem; 
+    gap: 1%; 
     grid-template-areas: 
     "prod1 prod2"
     "prod3 prod4"
@@ -798,6 +833,10 @@ a:hover {
   .merchInfo button {
     font-size: 0.7rem;
     margin-top: 2vh;
+  }
+
+  .merchInfo p {
+    margin-bottom: 0;
   }
 
   .imageContainer, .mini {
