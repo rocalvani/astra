@@ -514,7 +514,7 @@ h1 {
 .bodyContainer {
   display: grid;
   grid-template-columns: 50vw auto;
-  grid-template-rows: 15vh auto 10vh;
+  grid-template-rows: 16vh auto 12vh;
   gap: 0px 0px;
   grid-template-areas:
     "header header"
