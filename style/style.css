@@ -29,7 +29,6 @@ h1 {
 /* HEADER */
 
 .header {
-  padding: 2rem 4rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -39,6 +38,7 @@ h1 {
   flex-flow: row wrap;
   justify-content: space-between;
   grid-area: header;
+  padding: 2rem 6rem;
 }
 
 .header img {
@@ -282,12 +282,17 @@ h1 {
   background-color: black;
   border-bottom: 1px solid darkgray;
   padding: 1rem;
-  color: gray;
+  color: white;
   width: 100%;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   font-size: 1rem;
+  font-family: lato;
+}
+
+.mainInput:focus-visible {
+  outline: 0;
 }
 
 .inputSubmit {
@@ -297,6 +302,12 @@ h1 {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: lato;
+}
+
+.contactForm label {
+  color: white;
+  font-family:lato;
+  font-weight: 100;
 }
 
 /* AGENDA */
@@ -448,8 +459,8 @@ h1 {
 
 .bodyContainer {
   display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: auto auto 10vh;
+  grid-template-columns: 50vw auto;
+  grid-template-rows: 15vh auto 10vh;
   gap: 0px 0px;
   grid-template-areas:
     "header header"
@@ -458,6 +469,7 @@ h1 {
   align-content: center;
   align-items: center;
 }
+
 
 .contactForm {
   grid-area: contactForm;
@@ -468,7 +480,7 @@ h1 {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 75vh;
   grid-area: formImage;
 }
 
@@ -636,6 +648,10 @@ h1 {
 @media (max-width: 992px) {
   /* GENERAL */
 
+  .body {
+    background-image:none;
+  }
+
   .header {
     padding: 3vh;
   }
@@ -680,7 +696,7 @@ h1 {
   .mainIndex {
     background-image: url(../img/mobileheader-03.png) !important;
     background-size: 100%;
-    height: 70vh !important;
+    height: 81vh !important;
   }
 
   .cards {
@@ -690,7 +706,7 @@ h1 {
     margin: auto;
     width: 85%;
     top: 0;
-    height: 70vh;
+    height: 81vh;
     justify-content: flex-end;
   }
 
@@ -745,13 +761,12 @@ h1 {
 
   .desc {
     width: 92%;
-    padding: 3rem;
-    font-size: 1rem;
+    padding: 2rem;
     margin: 0.5rem auto;
   }
 
   .desc p {
-    font-size: 1.7vh;
+    font-size: 2vh;
   }
 
   .desc img {
@@ -775,7 +790,7 @@ h1 {
   }
 
   .subscribe p {
-    font-size: 2.2vh;
+    font-size: 2.5vh;
   }
 
   .subscribeForm {
@@ -783,6 +798,10 @@ h1 {
     padding: 0;
     margin-top: 1.6rem;
     font-size: 2vh;
+  }
+
+  .inputSubmit {
+    font-size: 1rem;
   }
 
   /* FAQ */
