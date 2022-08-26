@@ -96,6 +96,14 @@ h1 {
   background: #c2aa7a;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 /* MAIN */
 
 .subSite {
@@ -313,10 +321,23 @@ h1 {
 /* AGENDA */
 
 .agendaTitle {
-  text-align: center;
+  text-align: left;
   font-family: playfair display;
   text-transform: lowercase;
   font-style: italic;
+  font-size: 6rem;
+  padding: 5rem 0rem;
+}
+
+.agendaTitle a {
+  font-size: 1.5rem;
+  font-family: lato;
+  font-style: normal;
+}
+
+.agendaTitle img {
+  height: 7rem;
+  margin-left: 2rem;
 }
 
 .agendaInfo {
@@ -331,14 +352,41 @@ h1 {
 
 .agendaMes,
 .agendaDia {
-  border-top: 1px solid white;
-  padding: 2rem;
-  width: 20%;
-  margin: 5rem 0rem;
+  width: 24%;
 }
 
 .agendaDia p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.agendaDia h2, .agendaMes H2 {
+  font-size: 2.2rem;
+  border-top: 1px solid white;
+  padding-top: 2rem;
+}
+
+.agendaDia h3 {
+  font-size: 1.6rem;
+}
+
+.agendaDia h5 {
+  font-size: .7rem;
+  background-color:rgb(12, 4, 43);
+  padding: .8rem;
+  border-radius: 2rem;
+  display: inline-block;
+  clear: both;
+  line-height: .7rem;
+  text-transform: uppercase;
+}
+
+.agendaTag {
+  line-height: 2rem;
+}
+
+.mes {
+  margin-bottom: 3px;
 }
 
 .stickerSold {
@@ -355,6 +403,12 @@ h1 {
   text-align: center;
   vertical-align: middle;
   line-height: 80px;
+  transform: rotate(-20deg);
+}
+
+.stickerSold P {
+  line-height: inherit;
+  font-size: inherit;
 }
 
 /* FAQ */
@@ -613,14 +667,20 @@ h1 {
 .item button {
   background-color: transparent;
   color: white;
-  font-family: lato;
   border: 1px solid #c2aa7a;
   border-radius: 30px;
   text-transform: uppercase;
-  padding: 0.6rem 1.5rem;
-  font-size: 0.8rem;
+  width: 2rem;
+  height: 2rem;
+  text-align:center;
   background-image: url(../img/b01-8.png);
   background-size: cover;
+}
+
+.item .material-symbols-outlined {
+  font-size: 1.2rem;
+  line-height:2.1rem;
+  text-align:center;
 }
 
 /* FOOTER */
@@ -666,6 +726,7 @@ h1 {
     margin: auto;
     flex-direction: column;
     text-align: center;
+    font-size: .6rem;
   }
 
   .footer ul {
@@ -674,12 +735,15 @@ h1 {
     padding: 0;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 1rem;
   }
 
   .footer li {
     margin: 0;
     padding: 0;
+  }
+
+  .footer li a {
+    font-size: .6rem;
   }
 
   .margined {
@@ -807,13 +871,14 @@ h1 {
   /* FAQ */
 
   .faqImg, .faqimg .filter {
-    height: 10vh!important;
+    height: 12vh!important;
     background-image: none;
     line-height: 10vh!important;
   }
 
-  .filter h1 {
-    font-size:4vh!important;
+  .faqTitle {
+    font-size:6vh!important;
+    line-height: 6vh;
   }
 
   .faq {
@@ -841,7 +906,7 @@ h1 {
     font-size: 1.2rem;
     font-family: lato;
     font-style:normal;
-    font-weight: 100;
+    padding: 1rem 0;
   }
 
   .accordion-body {
@@ -927,7 +992,7 @@ h1 {
     flex-direction: column;
     font-size: 0.7rem;
     text-align: left;
-    padding: 0;
+    padding: .5rem 0rem;
     align-items: flex-start;
   }
 
@@ -954,8 +1019,21 @@ h1 {
 
   /* AGENDA */
 
+  .agendaTitle {
+    font-size: 3rem;
+    text-align:center;
+  }
+
+  .agendaTitle a {
+    font-size: .8rem;
+  }
+
   .agendaInfo {
     flex-direction: column;
+  }
+
+  .agendaTag {
+    display: none;
   }
 
   .agendaMes,
