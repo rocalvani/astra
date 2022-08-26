@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Playfair+Display:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Playfair+Display:ital@0;1&display=swap");
 
 /* GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 .body {
@@ -23,7 +22,7 @@ a:hover {
   color: white;
 }
 
-h1 { 
+h1 {
   line-height: inherit;
 }
 
@@ -63,12 +62,13 @@ h1 {
   margin: 0rem 1.5rem;
 }
 
-.navbar { 
+.navbar {
   width: 100%;
   --bs-navbar-toggler-border-color: #c2aa7a;
 }
 
-.nav-item a, .nav-item a:hover {
+.nav-item a,
+.nav-item a:hover {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
@@ -84,6 +84,18 @@ h1 {
   background-image: url(../img/toggle-02.png);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2aa7a;
+}
+
 /* MAIN */
 
 .subSite {
@@ -97,7 +109,7 @@ h1 {
 
 .margined {
   width: 85%;
-  margin:auto;
+  margin: auto;
   color: white;
   font-family: lato;
   font-weight: 100;
@@ -131,7 +143,6 @@ h1 {
   margin: auto;
 }
 
-
 .cardContainer {
   font-size: 1.5rem;
   width: 50%;
@@ -140,7 +151,7 @@ h1 {
 .cardContainerLink {
   font-size: 1.2rem;
   font-weight: 400;
-  width:50%;
+  width: 50%;
   text-align: right;
 }
 
@@ -149,12 +160,11 @@ h1 {
   margin-left: 2rem;
 }
 
-
 .ticketButton {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .cardsDesc {
@@ -172,12 +182,58 @@ h1 {
   font-weight: 100;
   width: 23%;
   padding: 10rem 2rem 2rem 2rem;
-  border: 1px solid #1c6966;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url(../img/b01-8.png);
   background-size: cover;
-  background-repeat:repeat;
+  background-repeat: repeat;
+}
+
+.descOne {
+  background: linear-gradient(
+    117deg,
+    rgba(10, 66, 107, 1) 0%,
+    rgba(0, 0, 0, 0) 23%,
+    rgba(0, 0, 0, 1) 63%,
+    rgba(10, 67, 107, 1) 88%,
+    rgba(18, 49, 71, 1) 100%
+  );
+  border: 1px solid #122547;
+}
+
+.descTwo {
+  background: linear-gradient(
+    117deg,
+    rgba(10, 33, 107, 1) 0%,
+    rgba(0, 0, 0, 0) 23%,
+    rgba(0, 0, 0, 1) 63%,
+    rgba(10, 36, 107, 1) 88%,
+    rgba(18, 37, 71, 1) 100%
+  );
+  border: 1px solid #123147;
+}
+
+.descThree {
+  background: linear-gradient(
+    117deg,
+    rgba(29, 10, 107, 1) 0%,
+    rgba(0, 0, 0, 0) 23%,
+    rgba(0, 0, 0, 1) 63%,
+    rgba(29, 10, 107, 1) 88%,
+    rgba(36, 18, 71, 1) 100%
+  );
+  border: 1px solid #241247;
+}
+
+.descFour {
+  background: linear-gradient(
+    117deg,
+    rgba(59, 10, 107, 1) 0%,
+    rgba(0, 0, 0, 0) 23%,
+    rgba(0, 0, 0, 1) 63%,
+    rgba(68, 10, 107, 1) 88%,
+    rgba(55, 18, 71, 1) 100%
+  );
+  border: 1px solid #371247;
 }
 
 .desc img {
@@ -200,7 +256,7 @@ h1 {
 }
 
 .subscribeText {
-  Font-size: 3rem;
+  font-size: 3rem;
   font-weight: 100;
   width: 40%;
 }
@@ -217,7 +273,7 @@ h1 {
   font-weight: 100;
   font-size: 1.2rem;
   width: 50%;
-  color:white;
+  color: white;
   font-family: lato;
   grid-area: subscribeForm;
 }
@@ -255,14 +311,15 @@ h1 {
 .agendaInfo {
   color: white;
   font-family: lato;
-  font-weight: 100; 
+  font-weight: 100;
   display: flex;
   flex-flow: row wrap;
   align-content: center;
   justify-content: space-evenly;
 }
 
-.agendaMes, .agendaDia {
+.agendaMes,
+.agendaDia {
   border-top: 1px solid white;
   padding: 2rem;
   width: 20%;
@@ -274,7 +331,7 @@ h1 {
 }
 
 .stickerSold {
-  Background-color: #c2aa7a;
+  background-color: #c2aa7a;
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -284,8 +341,8 @@ h1 {
   position: relative;
   left: 65%;
   top: -80px;
-  text-align:center;
-  vertical-align:middle;
+  text-align: center;
+  vertical-align: middle;
   line-height: 80px;
 }
 
@@ -303,7 +360,7 @@ h1 {
   font-weight: 400;
   font-size: 0.6rem;
   height: auto;
-  position: sticky; 
+  position: sticky;
   top: 15%;
 }
 
@@ -333,7 +390,6 @@ h1 {
   padding: 1.5rem 0rem;
 }
 
-
 .faqImg {
   height: 20rem;
   background-image: url(../img/faqimg.jpeg);
@@ -341,7 +397,7 @@ h1 {
   color: white;
   font-family: playfair display;
   line-height: 20rem;
-  text-align:center;
+  text-align: center;
   text-transform: lowercase;
   font-style: italic;
   font-size: 3rem;
@@ -391,16 +447,16 @@ h1 {
 /* CONTACT */
 
 .bodyContainer {
-  display: grid; 
-  grid-template-columns: 50vw 50vw; 
-  grid-template-rows: auto auto 10vh; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: auto auto 10vh;
+  gap: 0px 0px;
+  grid-template-areas:
     "header header"
     "formImage contactForm"
-    "footer footer"; 
-  align-content: center; 
-  align-items: center; 
+    "footer footer";
+  align-content: center;
+  align-items: center;
 }
 
 .contactForm {
@@ -429,7 +485,6 @@ h1 {
   font-family: lato;
   font-weight: 100;
   font-size: 2rem;
-
 }
 
 /* MERCH */
@@ -445,7 +500,7 @@ h1 {
   background-position: center;
   text-align: center;
   text-transform: lowercase;
-  font-style: italic; 
+  font-style: italic;
 }
 
 .filter {
@@ -475,7 +530,7 @@ h1 {
 
 .item img {
   width: 100%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .item img:hover {
@@ -491,56 +546,56 @@ h1 {
   text-transform: uppercase;
   font-size: 0.8rem;
   background-color: black;
-  color:rgb(157, 157, 157)
+  color: rgb(157, 157, 157);
 }
 
 .merchInfo b {
   color: white;
 }
 
-.prod1 { 
-  grid-area: prod1; 
+.prod1 {
+  grid-area: prod1;
 }
-.prod2 { 
+.prod2 {
   grid-area: prod2;
 }
-.prod3 { 
+.prod3 {
   grid-area: prod3;
 }
-.prod4 { 
-  grid-area: prod4; 
+.prod4 {
+  grid-area: prod4;
 }
-.prod5 { 
-  grid-area: prod5; 
+.prod5 {
+  grid-area: prod5;
 }
-.prod6 { 
-  grid-area: prod6; 
+.prod6 {
+  grid-area: prod6;
 }
-.prod7 { 
-  grid-area: prod7; 
+.prod7 {
+  grid-area: prod7;
 }
-.prod8 { 
+.prod8 {
   grid-area: prod8;
- }
-.prod9 { 
-  grid-area: prod9; 
+}
+.prod9 {
+  grid-area: prod9;
 }
 
 .gridContainer {
   width: 93%;
   margin: 8vh auto;
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(5, auto) ; 
-  gap: 1rem; 
-  grid-template-areas: 
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 1rem;
+  grid-template-areas:
     "prod1 prod2 prod3"
     "prod1 prod4 prod3"
     "prod5 prod4 prod6"
     "prod5 prod7 prod6"
-    "prod8 prod7 prod9"; 
+    "prod8 prod7 prod9";
 }
 
 .item button {
@@ -579,7 +634,6 @@ h1 {
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 992px) {
-
   /* GENERAL */
 
   .header {
@@ -587,15 +641,15 @@ h1 {
   }
 
   .navbar-nav {
-    text-align:right;
+    text-align: right;
   }
 
   .footer {
     margin: 0;
     width: 85%;
-    margin:auto;
+    margin: auto;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
   }
 
   .footer ul {
@@ -608,13 +662,13 @@ h1 {
   }
 
   .footer li {
-    margin: 0; 
+    margin: 0;
     padding: 0;
   }
 
   .margined {
-    width:80%;
-    margin:auto;
+    width: 80%;
+    margin: auto;
   }
 
   .subSite {
@@ -624,9 +678,9 @@ h1 {
   /*INDEX */
 
   .mainIndex {
-    background-image: url(../img/mobileheader-03.png)!important;
+    background-image: url(../img/mobileheader-03.png) !important;
     background-size: 100%;
-    height: 45vh!important;
+    height: 70vh !important;
   }
 
   .cards {
@@ -636,8 +690,8 @@ h1 {
     margin: auto;
     width: 85%;
     top: 0;
-    height: 45vh;
-    justify-content: flex-end
+    height: 70vh;
+    justify-content: flex-end;
   }
 
   .cardContainer {
@@ -649,17 +703,18 @@ h1 {
   .cardContainerLink {
     width: 100%;
     padding: 0;
-    margin:0;
+    margin: 0;
     line-height: 1.3rem;
   }
-  
+
   .cardContainerLink img {
     height: 4rem;
     margin: 0;
   }
 
-  .cardContainer, .cardContainerLink {
-    padding: 0rem ;
+  .cardContainer,
+  .cardContainerLink {
+    padding: 0rem;
   }
 
   .ticketButton {
@@ -667,9 +722,9 @@ h1 {
     align-content: center;
     background-color: #c2aa7a;
     padding: 1rem;
-    margin:0;
+    margin: 0;
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     font-size: 1.5vh;
     border-radius: 10rem;
     margin-top: 1rem;
@@ -680,19 +735,19 @@ h1 {
   }
 
   .ticketButton img {
-    display:none;
+    display: none;
   }
 
   .cardsDesc {
-    width:92%;
+    width: 92%;
     margin: 1rem auto 0rem auto;
   }
 
   .desc {
-    width:92%;
+    width: 92%;
     padding: 3rem;
     font-size: 1rem;
-    margin: .5rem auto;
+    margin: 0.5rem auto;
   }
 
   .desc p {
@@ -730,11 +785,10 @@ h1 {
     font-size: 2vh;
   }
 
-
-   /* FAQ */
+  /* FAQ */
 
   .faq {
-    display:none;
+    display: none;
   }
 
   .faq ul {
@@ -746,12 +800,12 @@ h1 {
   }
 
   .questionContainer {
-    width:100%;
+    width: 100%;
     margin-top: 0;
   }
 
   .question {
-    padding:0rem;
+    padding: 0rem;
     font-size: 0.8rem;
   }
 
@@ -763,21 +817,20 @@ h1 {
     padding: 2rem 0rem;
   }
 
-
   /* CONTACTO */
 
   .bodyContainer {
-    display: grid; 
+    display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: auto 40vh auto auto; 
-    gap: 0px 0px; 
-    grid-template-areas: 
+    grid-template-rows: auto 40vh auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
       "header"
       "formImage"
       "contactForm"
-      "footer"; 
-    align-content: center; 
-    align-items: center; 
+      "footer";
+    align-content: center;
+    align-items: center;
   }
 
   .formImage {
@@ -799,25 +852,25 @@ h1 {
   /* MERCH */
 
   .mainImg {
-    height: 25vh;
-    line-height: 25vh;
+    height: 35vh;
+    line-height: 35vh;
     font-size: 1rem;
   }
 
   .gridContainer {
     width: 82%;
     margin: 8vh auto;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: repeat(2, 50%); 
-    grid-template-rows: repeat(8, auto) ; 
-    gap: 1%; 
-    grid-template-areas: 
-    "prod1 prod2"
-    "prod3 prod4"
-    "prod5 prod6"
-    "prod7 prod8"; 
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(8, auto);
+    gap: 1%;
+    grid-template-areas:
+      "prod1 prod2"
+      "prod3 prod4"
+      "prod5 prod6"
+      "prod7 prod8";
   }
 
   .prod9 {
@@ -839,8 +892,9 @@ h1 {
     margin-bottom: 0;
   }
 
-  .imageContainer, .mini {
-   height: 26vh;
+  .imageContainer,
+  .mini {
+    height: 26vh;
   }
 
   .imageContainer:hover {
@@ -857,11 +911,11 @@ h1 {
     flex-direction: column;
   }
 
-  .agendaMes, .agendaDia {
+  .agendaMes,
+  .agendaDia {
     width: 100%;
     height: auto;
-    margin:0;
-
+    margin: 0;
   }
 
   .agendaMes {
@@ -871,5 +925,4 @@ h1 {
   .agendaMes h2 {
     font-size: 2rem;
   }
-
 }
