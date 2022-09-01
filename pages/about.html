@@ -15,7 +15,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Astra</title>
   </head>
 
@@ -25,7 +25,7 @@
       <header class="header">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a href="../index.html"><img src="../img/logo.png" alt="astra" /></a>
+            <a href="../index.html"><img src="../img/logo.png" alt="astra" class="header__img"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,13 +50,13 @@
         <!-- Fin barra navegación -->
       </header>
       <main>
-        <section class="mainImg faqImg">
-          <div class="filter"><h1 class="faqTitle">Información del festival</h1></div>
+        <section class="mainImg mainImg--faq">
+          <div class="mainImg__filter"><h1 class="faqTitle">Información del festival</h1></div>
         </section>
         <div class="margined">
-          <div class="subSite preguntas">
+          <div class="preguntas">
             <!-- Preguntas -->
-            <aside class="faq">
+            <aside class="preguntas__faq">
               <ul>
                 <li>
                   <a href="#lugar"
@@ -74,7 +74,7 @@
             <!-- Respuestas -->
             <div class="accordion questionContainer" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
-                <h2 class="accordion-header question" id="panelsStayOpen-headingOne">
+                <h2 class="accordion-header questionContainer__question" id="panelsStayOpen-headingOne">
                   <button id="lugar" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                     ¿Dónde se hace el festival?
                   </button>
@@ -100,7 +100,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header question" id="panelsStayOpen-headingTwo">
+                <h2 class="accordion-header questionContainer__question" id="panelsStayOpen-headingTwo">
                   <button id="ingreso" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                     ¿Puedo ingresar con alimentos?
                   </button>
@@ -118,7 +118,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header question" id="panelsStayOpen-headingThree">
+                <h2 class="accordion-header questionContainer__question" id="panelsStayOpen-headingThree">
                   <button id="entradas" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                     ¿Cuántas entradas puedo comprar?
                   </button>
@@ -131,7 +131,7 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header question" id="panelsStayOpen-headingFour">
+                <h2 class="accordion-header questionContainer__question" id="panelsStayOpen-headingFour">
                   <button id="retiro" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                     ¿Dónde retiro mis entradas?
                   </button>

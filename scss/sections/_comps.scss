@@ -1,0 +1,196 @@
+.margined {
+  width: 85%;
+  margin: auto;
+  color: white;
+  font-family: lato;
+  font-weight: 100;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* MAIN IMAGE */
+
+.mainImg {
+  background-image: url(../img/astra-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__cards {
+    height: 85vh;
+    padding-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-family: lato;
+    font-weight: 100;
+    width: 87%;
+    margin: auto;
+  }
+  &__Container {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  &__Link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 50%;
+    text-align: right;
+    img {
+      height: 8rem;
+      margin-left: 2rem;
+    }
+  }
+  &__filter {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 30rem;
+  }
+  &--faq {
+    height: 20rem;
+    background-image: url(../img/faqimg.jpeg);
+    background-position: center;
+    color: white;
+    font-family: playfair display;
+    line-height: 20rem;
+    text-align: center;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 3rem;
+  }
+  &--merch {
+    height: 30rem;
+    color: white;
+    font-family: playfair display;
+    line-height: 30rem;
+    font-size: 3rem;
+    background-image: url(../img/merchmain.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-transform: lowercase;
+    font-style: italic;
+  }
+}
+
+.mainInput {
+  background-color: black;
+  border-bottom: 1px solid darkgray;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 1rem;
+  font-family: lato;
+  &:focus-visible {
+    outline: 0;
+  }
+}
+
+.inputSubmit {
+  background-color: black;
+  border: 0px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: lato;
+}
+
+/* BOTON ENTRADAS */
+
+.ticketButton {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .margined {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .mainIndex {
+    background-image: url(../img/mobileheader-03.png) !important;
+    background-size: 100%;
+    height: 81vh !important;
+  }
+
+  .mainImg {
+    height: 85vh;
+    line-height: 85vh;
+    h1 {
+      font-size: 4rem;
+      line-height: 85vh!important;
+    }
+    &__cards {
+      padding: 0;
+      flex-direction: column;
+      position: relative;
+      margin: auto;
+      width: 85%;
+      top: 0;
+      height: 81vh;
+      justify-content: flex-end;
+    }
+    &__Container {
+      font-size: 3vh;
+      line-height: 3vh;
+      width: 100%;
+      padding: 0rem;
+    }
+    &__Link {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      line-height: 1.3rem;
+      img {
+        height: 4rem;
+        margin: 0;
+      }
+    }
+    &__filter {
+      height: 85vh;
+      background-image: none;
+      line-height: 10vh !important;
+    }
+    &--faq {
+      height: 10vh;
+      background-image: none;
+      h1 {
+        line-height: 5vh !important;
+      }
+    }
+  }
+
+  .ticketButton {
+    flex-direction: column-reverse;
+    align-content: center;
+    background-color: $gold;
+    padding: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5vh;
+    border-radius: 10rem;
+    margin-top: 1rem;
+    p {
+      margin-bottom: 0;
+    }
+    img {
+      display: none;
+    }
+  }
+
+  .inputSubmit {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,147 @@
+/* MERCH */
+.gridContainer {
+  width: 93%;
+  margin: 8vh auto;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 1rem;
+  grid-template-areas:
+    "prod1 prod2 prod3"
+    "prod1 prod4 prod3"
+    "prod5 prod4 prod6"
+    "prod5 prod7 prod6"
+    "prod8 prod7 prod9";
+  &__item {
+    color: white;
+    font-family: lato;
+    & img {
+      width: 100%;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+    & button {
+      background-color: transparent;
+      color: white;
+      border: 1px solid #c2aa7a;
+      border-radius: 30px;
+      text-transform: uppercase;
+      width: 2rem;
+      height: 2rem;
+      text-align: center;
+      background-image: url(../img/b01-8.png);
+      background-size: cover;
+    }
+    .material-symbols-outlined {
+      font-size: 1.2rem;
+      line-height: 2.1rem;
+      text-align: center;
+    }
+    &--prod1 {
+      grid-area: prod1;
+    }
+    &--prod2 {
+      grid-area: prod2;
+    }
+    &--prod3 {
+      grid-area: prod3;
+    }
+    &--prod4 {
+      grid-area: prod4;
+    }
+    &--prod5 {
+      grid-area: prod5;
+    }
+    &--prod6 {
+      grid-area: prod6;
+    }
+    &--prod7 {
+      grid-area: prod7;
+    }
+    &--prod8 {
+      grid-area: prod8;
+    }
+    &--prod9 {
+      grid-area: prod9;
+    }
+  }
+  &__image {
+    width: 100%;
+    overflow: hidden;
+    height: 60vh;
+    &--mini {
+      height: 25vh;
+      & img {
+        margin: -50% 0;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: black;
+    color: rgb(157, 157, 157);
+    & b {
+      color: white;
+    }
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .gridContainer {
+    width: 82%;
+    margin: 8vh auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(8, auto);
+    gap: 1%;
+    grid-template-areas:
+      "prod1 prod2"
+      "prod3 prod4"
+      "prod5 prod6"
+      "prod7 prod8";
+    &__info {
+      flex-direction: column;
+      font-size: 0.7rem;
+      text-align: left;
+      padding: 0.5rem 0rem;
+      align-items: flex-start;
+      button {
+        display: none;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    &__item {
+      &--prod9 {
+        display: none;
+      }
+    }
+    &__image {
+      height: 26vh;
+      &:hover {
+        transform: none;
+      }
+      &--mini {
+        height: 26vh;
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

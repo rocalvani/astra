@@ -15,7 +15,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Astra</title>
   </head>
 
@@ -26,7 +26,7 @@
         <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a href="./index.html"><img src="./img/logo.png" alt="astra" /></a>
+            <a href="./index.html"><img src="./img/logo.png" alt="astra" class="header__img"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,14 +53,14 @@
       <main>
         <!-- Imagen main -->
         <section class="mainImg mainIndex">
-          <div class="cards">
-            <article class="cardContainer">
+          <div class="mainImg__cards">
+            <article class="mainImg__Container">
               <p>
                 Astra es un festival dedicado a los <br />
                 <b>cuerpos celestes y a las ciencias y artes que los rodean</b>.
               </p>
             </article>
-            <article class="cardContainerLink">
+            <article class="mainImg__Link">
               <a class="ticketButton" href="https://www.allaccess.com.ar/">
                 <p>Comprá tus entradas.</p>
                 <img src="./img/flecha.png" alt="Botón con forma de flecha" />
@@ -71,7 +71,7 @@
         <!-- Fin imagen main -->
         <!-- Cards -->
         <section class="cardsDesc">
-          <article class="desc descOne wow animate__animated animate__fadeInUp">
+          <article class="cardsDesc__desc cardsDesc__desc--One wow animate__animated animate__fadeInUp">
             <img
               src="./img/desc01.png"
               alt="Luna en cuarto creciente con un anillo"
@@ -87,7 +87,7 @@
               espacio-tiempo.
             </p>
           </article>
-          <article class="desc descTwo wow animate__animated animate__fadeInUp">
+          <article class="cardsDesc__desc cardsDesc__desc--Two wow animate__animated animate__fadeInUp">
             <img src="./img/dec03-8.png" alt="Constelación" />
             <h3>Viaje a las estrellas</h3>
             <br /><br />
@@ -97,7 +97,7 @@
               visitando nuestro país por primera vez.
             </p>
           </article>
-          <article class="desc descThree wow animate__animated animate__fadeInUp">
+          <article class="cardsDesc__desc cardsDesc__desc--Three wow animate__animated animate__fadeInUp">
             <img
               src="./img/dec02-8.png"
               alt="Estrella flotando sobre una mano"
@@ -110,7 +110,7 @@
               nuestra conexión con el cosmos?
             </p>
           </article>
-          <article class="desc descFour wow animate__animated animate__fadeInUp">
+          <article class="cardsDesc__desc cardsDesc__desc--Four wow animate__animated animate__fadeInUp">
             <img src="./img/dec04-8.png" alt="Planeta con órbita" />
             <h3>El poder de los planetas</h3>
             <br /><br />
@@ -125,7 +125,7 @@
         <!-- Fin cards -->
         <!-- Comienza suscripción -->
         <section class="subscribe wow animate__animated animate__fadeInUp">
-          <div class="subscribeText">
+          <div class="subscribe__Text">
             <h3>
               ¿Querés recibir <br />
               más noticias?
@@ -136,7 +136,7 @@
               actualizaciones que necesitás antes que nadie.
             </p>
           </div>
-          <div class="subscribeForm">
+          <div class="subscribe__Form">
             <form action="#" method="get">
               <label for="nombre">Mi nombre es...</label><br />
               <input type="text" name="nombre" class="mainInput" /><br /><br />

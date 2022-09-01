@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Astra</title>
   </head>
 
@@ -26,7 +26,7 @@
       <header class="header">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a href="../index.html"><img src="../img/logo.png" alt="astra" /></a>
+            <a href="../index.html"><img src="../img/logo.png" alt="astra" class="header__img"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,19 +51,19 @@
         <!-- Fin barra navegación -->
       </header>
       <main>
-        <section class="mainImg merchImg">
-          <div class="filter"><h1>Merch</h1></div>
+        <section class="mainImg mainImg--merch">
+          <div class="mainImg__filter"><h1>Merch</h1></div>
         </section>
         <!-- Artículos -->
         <section class="gridContainer">
-          <article class="item prod1 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer">
+          <article class="gridContainer__item gridContainer__item--prod1 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image">
               <img
                 src="../img/merch01.jpg"
                 alt="Remera que dice to the moon and never back"
               />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
               <p>
                 Remera to the moon
                 <br />
@@ -74,14 +74,14 @@
                 </span></button></a>
             </div>
           </article>
-          <article class="item prod2 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer mini">
+          <article class="gridContainer__item gridContainer__item--prod2 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image gridContainer__image--mini">
               <img
                 src="../img/merch03.png"
                 alt="Remerón con imagen de una galaxia"
               />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
               <p>
               Beanie Astra
               <br />
@@ -92,14 +92,14 @@
                 </span></button></a>
             </div>
           </article>
-          <article class="item prod3 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer">
+          <article class="gridContainer__item gridContainer__item--prod3 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image">
               <img
                 src="../img/merch02.png"
                 alt="Gorro con el logo del festival"
               />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
               <p>Remerón Starchild
                 <br />
                 <b>$3799</b>
@@ -109,11 +109,11 @@
               </span></button></a>
           </div>
           </article>
-          <article class="item prod4 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer">
+          <article class="gridContainer__item gridContainer__item--prod4 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image">
               <img src="../img/merch04.png" alt="Agenda" />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
               <p>Agenda 2023
                 <br />
                 <b>$1760</b>
@@ -123,11 +123,11 @@
               </span></button></a>
           </div>
           </article>
-          <article class="item prod5 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer">
+          <article class="gridContainer__item gridContainer__item--prod5 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image">
               <img src="../img/merch08.png" alt="Remera Signos" />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
               <p>Remera Signos
                 <br />
                 <b>$2699</b>
@@ -137,14 +137,14 @@
               </span></button></a>
           </div>
           </article>
-          <article class="item prod6 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer">
+          <article class="gridContainer__item gridContainer__item--prod6 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image">
               <img
                 src="../img/merch06.png"
                 alt="Remera con el logo del festival"
               />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
             <p>Remera Astra
               <br />
               <b>$2350</b>
@@ -154,14 +154,14 @@
               </span></button></a>
           </div>
           </article>
-          <article class="item prod7 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer">
+          <article class="gridContainer__item gridContainer__item--prod7 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image">
               <img
                 src="../img/merch07.png"
                 alt="Bolsa con imagen de una galaxia"
               />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info ">
             <p>Bolsa Galaxy
               <br />
               <b>$1320</b>
@@ -171,11 +171,11 @@
               </span></button></a>
           </div>
           </article>
-          <article class="item prod8 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer mini">
+          <article class="gridContainer__item gridContainer__item--prod8 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image gridContainer__image--mini">
               <img src="../img/merch05.png" alt="Cuaderno tipo bullet journal" />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
             <p>Cuaderno Dotted
               <br />
               <b>1250</b>
@@ -184,11 +184,11 @@
               favorite
               </span></button></a>
           </article>
-          <article class="item prod9 wow animate__animated animate__fadeInUp">
-            <div class="imageContainer mini">
+          <article class="gridContainer__item gridContainer__item--prod9 wow animate__animated animate__fadeInUp">
+            <div class="gridContainer__image gridContainer__image--mini">
               <img src="../img/merch09.png" alt="pins" />
             </div>
-            <div class="merchInfo">
+            <div class="gridContainer__info">
             <p>Enamel Pins
               <br />
               <b>$950</b>

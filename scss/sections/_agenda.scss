@@ -1,0 +1,130 @@
+.agendaTitle {
+  text-align: left;
+  font-family: playfair display;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 6rem;
+  padding: 5rem 0rem;
+  & a {
+    font-size: 1.5rem;
+    font-family: lato;
+    font-style: normal;
+  }
+  & img {
+    height: 7rem;
+    margin-left: 2rem;
+  }
+}
+
+.agenda {
+  color: white;
+  font-family: lato;
+  font-weight: 100;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  h2 {
+    font-size: 2.2rem;
+    border-top: 1px solid white;
+    padding-top: 2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  &__mes {
+    width: 24%;
+  }
+  &__dia {
+    width: 24%;
+    p {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+    h5 {
+      font-size: 0.7rem;
+      background-color: $deepblue;
+      padding: 0.8rem;
+      border-radius: 2rem;
+      display: inline-block;
+      clear: both;
+      line-height: 0.7rem;
+      text-transform: uppercase;
+    }
+  }
+  &__Tag {
+    line-height: 2rem;
+    &--Mes {
+      margin-bottom: 3px;
+    }
+  }
+  &__Sold {
+    background-color: $gold;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 400;
+    position: relative;
+    left: 65%;
+    top: -80px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    transform: rotate(-20deg);
+    & p {
+      line-height: inherit;
+      font-size: inherit;
+    }
+  }
+}
+
+/* RESPONSIVE */
+
+/* AGENDA */
+
+@media (max-width: 992px) {
+  .agendaTitle {
+    font-size: 3rem;
+    text-align: center;
+    a {
+      font-size: 0.8rem;
+    }
+  }
+  .agenda {
+    flex-direction: column;
+    h2 {
+      font-size: 2rem;
+    }
+    &__Tag {
+      display: none;
+      &--mes {
+        margin-bottom:0;
+      }
+    }
+    &__mes {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      border-top: 0;
+      padding: 2em 0rem;
+    }
+    &__dia {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 2em 0rem;
+      p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+    }
+    &__Sold {
+      p {
+        font-size: 0.8rem;
+        line-height: inherit;
+      }
+    }
+  }
+}

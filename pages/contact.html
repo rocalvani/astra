@@ -11,7 +11,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Astra</title>
   </head>
 
@@ -21,7 +21,7 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a href="../index.html"><img src="../img/logo.png" alt="astra" /></a>
+          <a href="../index.html"><img src="../img/logo.png" alt="astra" class="header__img"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,22 +45,22 @@
       </nav>
       <!-- Fin barra navegación -->
     </header>
-      <section class="formImage">
+      <section class="image">
         <img src="../img/cosmos-8.png" alt="cosmos">
       </section>
-      <section class="contactForm">
-          <h3 class="siteTitle"><b>Contactá</b> con nosotros</h3>
+      <section class="contact">
+          <h3 class="contact__title"><b>Contactá</b> con nosotros</h3>
           <br><br>
         <!-- Comienzo de Formulario -->
         <form action="#" method="get">
-            <input type="text" name="nombre" placeholder="Nombre" class="mainInput shortInput">
-            <input type="text" name="apellido" placeholder="Apellido" class="mainInput shortInput">
+            <input type="text" name="nombre" placeholder="Nombre" class="mainInput contact__short">
+            <input type="text" name="apellido" placeholder="Apellido" class="mainInput contact__short">
             <br><br>
             <input type="email" name="email" placeholder="Email" required class="mainInput">
             <br><br>
             <label for="comentario">Dejanos tu consulta</label>
             <br><br>
-            <textarea name="comentario" id="" cols="30" rows="6" class="mainInput commentInput"></textarea>
+            <textarea name="comentario" id="" cols="30" rows="6" class="mainInput contact__comment"></textarea>
             <br><br>
             <input type="submit" value="Enviar" class="inputSubmit">
         </form>

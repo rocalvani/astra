@@ -1,0 +1,116 @@
+/* FAQ */
+
+.preguntas {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  align-items: baseline;
+  &__faq {
+    width: 25%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 0.6rem;
+    height: auto;
+    position: sticky;
+    top: 15%;
+    & ul {
+      padding: 1rem;
+      list-style: none;
+      margin: 0 0 2rem 0;
+    }
+    & li {
+      margin: 0 0 0.5rem 0;
+      background-color: $deepblue;
+      padding: 1rem;
+      &:hover {
+        background-color: $gold;
+        transition: 1s;
+      }
+    }
+  }
+}
+
+.questionContainer {
+  width: 72%;
+  &__question {
+    border-top: 1px solid white;
+    padding: 1.5rem 0rem;
+  }
+}
+
+.contactSection {
+  background-color: #030516;
+  padding: 5rem 0rem;
+  margin-top: 2rem;
+  & h3 {
+    font-weight: regular;
+  }
+}
+
+.accordion-button {
+  color: white;
+  background-color: transparent;
+  font-family: playfair display;
+  font-size: 1.5rem;
+  font-style: oblique;
+  &:not(.collapsed) {
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  &:not(.collapsed)::after {
+    background-image: url(../img/arrowhead-05.png);
+  }
+  &::after {
+    background-image: url(../img/arrowhead-04.png);
+  }
+}
+
+.accordion-body {
+  color: white;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .preguntas {
+    flex-direction: column;
+    &__faq {
+      display: none;
+    }
+  }
+
+  .questionContainer {
+    width: 100%;
+    margin-top: 0;
+    &__question {
+      padding: 0rem;
+      iframe {
+        height: 20vh;
+      }
+    }
+  }
+
+  .accordion-button {
+    font-size: 1.2rem;
+    font-family: lato;
+    font-style: normal;
+    padding: 1rem 0;
+  }
+
+  .accordion-body {
+    padding: 1rem 0rem;
+  }
+
+  .contactSection {
+    padding: 2rem 0rem;
+  }
+}
