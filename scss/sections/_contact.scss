@@ -17,10 +17,7 @@
   grid-area: contactForm;
   padding: 0 3rem;
   &__title {
-    color: white;
-    font-family: lato;
-    font-weight: 100;
-    font-size: 2rem;
+    @include estiloTexto (2rem);
   }
   &__short {
     width: 49.6%;
@@ -29,9 +26,7 @@
     border: 1px solid white;
   }
   label {
-    color: white;
-    font-family: lato;
-    font-weight: 100;
+    @include estiloTexto (1rem)
   }
 }
 

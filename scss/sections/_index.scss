@@ -6,10 +6,8 @@
   width: 90%;
   margin: 2vh auto;
   &__desc {
-    color: white;
-    font-family: lato;
-    font-weight: 100;
-    width: 23%;
+    @include estiloTexto (0.9rem);
+    @extend %columnaAncho;
     padding: 10rem 2rem 2rem 2rem;
     border-radius: 20px;
     overflow: hidden;
@@ -63,9 +61,7 @@
   & img {
     margin-bottom: 4rem;
   }
-  & p {
-    font-size: 0.9rem;
-  }
+  
 }
 
 .subscribe {
@@ -89,11 +85,8 @@
     }
   }
   &__Form {
-    font-weight: 100;
-    font-size: 1.2rem;
+    @include estiloTexto (1.2rem);
     width: 50%;
-    color: white;
-    font-family: lato;
   }
 }
 

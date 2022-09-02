@@ -2,6 +2,7 @@
 
 /* VARIABLES */
 @import "./variables/colores";
+@import "./variables/extend";
 
 /* SECTIONS */
 @import "./sections/header-footer";
@@ -23,6 +24,11 @@
   background-color: black;
   background-image: url(../img/bgimg_1-8.png);
   background-size: auto 100%;
+  &__h1 {
+    font-size: 1px;
+    color: transparent;
+    line-height: 1px;
+  }
   a {
     text-decoration: none;
     color: white;
@@ -52,15 +58,6 @@
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
 }
 
-/* MAIN */
-
-
-.contactForm label {
-  color: white;
-  font-family: lato;
-  font-weight: 100;
-}
-
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 992px) {
@@ -69,14 +66,5 @@
   .body {
     background-image: none;
   }
-
-
-  /* FAQ */
-
-  .faqTitle {
-    font-size: 6vh !important;
-    line-height: 6vh;
-  }
-
 
 }

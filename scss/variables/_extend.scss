@@ -1,0 +1,22 @@
+//EXTEND
+
+%columnaAncho {
+  width: 24%;
+}
+
+%linksNav {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-family: lato;
+}
+
+// MIXIN
+
+@mixin estiloTexto($size) {
+  color: white;
+  font-size: $size;
+  font-weight: 100;
+  font-family: lato;
+}
