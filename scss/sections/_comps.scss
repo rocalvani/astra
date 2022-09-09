@@ -1,9 +1,7 @@
 .margined {
   width: 85%;
   margin: auto;
-  color: white;
-  font-family: lato;
-  font-weight: 100;
+  @include estiloTexto (inherit, 100);
   h1 {
     font-size: 3rem;
   }
@@ -16,6 +14,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   &__cards {
+    @include estiloTexto ($texto + 0.5rem, 100);
     height: 85vh;
     padding-bottom: 30px;
     display: flex;
@@ -24,21 +23,18 @@
     align-content: flex-end;
     align-items: center;
     position: relative;
-    color: white;
-    font-family: lato;
-    font-weight: 100;
     width: 87%;
     margin: auto;
   }
   &__Container {
-    font-size: 1.5rem;
+    font-size: $texto + 0.5rem;
     width: 50%;
     strong {
       font-weight: 100;
     }
   }
   &__Link {
-    font-size: 1.2rem;
+    font-size:$texto + 0.2rem;
     font-weight: 400;
     width: 50%;
     text-align: right;
@@ -53,29 +49,18 @@
     height: 30rem;
   }
   &--faq {
+    @include estiloTitulo($titulo);
+    @extend %pageImg;
     height: 20rem;
     background-image: url(../img/faqimg.jpeg);
-    background-position: center;
-    color: white;
-    font-family: playfair display;
     line-height: 20rem;
-    text-align: center;
-    text-transform: lowercase;
-    font-style: italic;
-    font-size: 3rem;
   }
   &--merch {
+    @extend %pageImg;
+    @include estiloTitulo($titulo);
     height: 30rem;
-    color: white;
-    font-family: playfair display;
-    line-height: 30rem;
-    font-size: 3rem;
     background-image: url(../img/merchmain.png);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    text-transform: lowercase;
-    font-style: italic;
+    line-height: 30rem;
   }
 }
 
@@ -98,10 +83,7 @@
 .inputSubmit {
   background-color: black;
   border: 0px;
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: lato;
+  @include estiloTexto ($texto + 0.6rem, 400);
 }
 
 /* BOTON ENTRADAS */

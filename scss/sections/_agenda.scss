@@ -1,8 +1,6 @@
 .agendaTitle {
+  @include estiloTitulo(inherit);
   text-align: left;
-  font-family: playfair display;
-  text-transform: lowercase;
-  font-style: italic;
   padding: 5rem 0rem;
   h1 {
     font-size: 6rem;
@@ -19,7 +17,7 @@
 }
 
 .agenda {
-  @include estiloTexto (1rem);
+  @include estiloTexto ($texto, 100);
   display: flex;
   flex-flow: row wrap;
   align-content: center;
@@ -58,19 +56,14 @@
     }
   }
   &__Sold {
-    background-color: $gold;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    font-size: 0.8rem;
-    color: white;
-    font-weight: 400;
+    @include estiloTexto($texto - 0.2, 400);
+    @extend %sticker;
     position: relative;
     left: 65%;
     top: -80px;
     text-align: center;
     vertical-align: middle;
-    line-height: 80px;
+    
     transform: rotate(-20deg);
     & p {
       line-height: inherit;
@@ -103,17 +96,11 @@
       }
     }
     &__mes {
-      width: 100%;
-      height: auto;
-      margin: 0;
+      @extend %anchoMobile;
       border-top: 0;
-      padding: 2em 0rem;
     }
     &__dia {
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 2em 0rem;
+      @extend %anchoMobile;
       p {
         font-size: 1rem;
         line-height: 1.2rem;

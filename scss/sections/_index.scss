@@ -6,7 +6,7 @@
   width: 90%;
   margin: 2vh auto;
   &__desc {
-    @include estiloTexto (0.9rem);
+    @include estiloTexto (0.9rem, 100);
     @extend %columnaAncho;
     padding: 10rem 2rem 2rem 2rem;
     border-radius: 20px;
@@ -65,14 +65,11 @@
 }
 
 .subscribe {
+  @extend %flex;
   color: white;
   margin: 8rem auto;
   width: 87%;
   font-family: lato;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
   &__Text {
     font-size: 3rem;
     font-weight: 100;
@@ -85,7 +82,7 @@
     }
   }
   &__Form {
-    @include estiloTexto (1.2rem);
+    @include estiloTexto (1.2rem, 100);
     width: 50%;
   }
 }

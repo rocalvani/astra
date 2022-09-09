@@ -1,10 +1,7 @@
 /* FAQ */
 
 .preguntas {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: space-between;
+  @extend %flex;
   width: 100%;
   margin-top: 2rem;
   align-items: baseline;
@@ -13,7 +10,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
-    font-size: 0.6rem;
+    font-size: $texto - 0.4rem;
     height: auto;
     position: sticky;
     top: 15%;
@@ -54,9 +51,7 @@
 .accordion-button {
   color: white;
   background-color: transparent;
-  font-family: playfair display;
-  font-size: 1.5rem;
-  font-style: oblique;
+  @include estiloTitulo(1.5rem);
   &:not(.collapsed) {
     color: white;
     background-color: transparent;

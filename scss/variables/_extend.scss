@@ -6,17 +6,59 @@
 
 %linksNav {
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: $texto - 0.3;
   letter-spacing: 0.1rem;
   color: white;
   font-family: lato;
 }
 
+%pageImg {
+  background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+%sticker {
+  background-color: $gold;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  line-height: 80px;
+}
+
+%flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
 // MIXIN
 
-@mixin estiloTexto($size) {
+@mixin estiloTexto($size, $weight) {
   color: white;
   font-size: $size;
-  font-weight: 100;
+  font-weight: $weight;
   font-family: lato;
+}
+
+@mixin estiloTitulo($size) {
+  font-family: playfair display;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: $size;
+  color: white;
+}
+
+// MOBILE
+
+@media (max-width: 992px) {
+  %anchoMobile {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 2em 0rem;
+  }
 }
