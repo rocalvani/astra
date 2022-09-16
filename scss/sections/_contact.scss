@@ -26,7 +26,10 @@
     border: 1px solid white;
   }
   label {
-    @include estiloTexto ($texto, 100)
+    @include estiloTexto ($texto, 0)
+  }
+  textarea {
+    resize: none;
   }
 }
 

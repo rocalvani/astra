@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Playfair+Display:ital@0;1&display=swap");
-
 /* VARIABLES */
 @import "./variables/colores";
+@import "./variables/typo";
 @import "./variables/extend";
 
 /* SECTIONS */
@@ -25,6 +24,14 @@ ul {
   margin-bottom: 0;
 }
 
+p {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: normal;
+}
+
 .body {
   background-color: black;
   background-image: url(../img/bgimg_1-8.png);
@@ -37,8 +44,10 @@ ul {
   a {
     text-decoration: none;
     color: white;
+    transition: .5s;
     &:hover {
-      color: white;
+      color: $gold;
+      transition: .5s;
     }
   }
   h1 {

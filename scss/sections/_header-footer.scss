@@ -30,6 +30,11 @@
       @extend %linksNav;
     }
   }
+  .nav-link {
+    &--active {
+      font-weight: 700;
+    }
+  }
 }
 
 .navbar-expand-lg .navbar-collapse {

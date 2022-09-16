@@ -17,7 +17,7 @@
 }
 
 .agenda {
-  @include estiloTexto ($texto, 100);
+  @include estiloTexto($texto, 100);
   display: flex;
   flex-flow: row wrap;
   align-content: center;
@@ -30,14 +30,11 @@
   h4 {
     font-size: 1.6rem;
   }
-  &__mes {
+  &__Mes {
     @extend %columnaAncho;
   }
-  &__dia {
+  &__Dia {
     @extend %columnaAncho;
-    p {
-      line-height: 1.2rem;
-    }
     h3 {
       font-size: 0.7rem;
       background-color: $deepblue;
@@ -50,10 +47,10 @@
     }
   }
   &__Tag {
-    line-height: 2rem;
-    &--Mes {
-      margin-bottom: 3px;
-    }
+    margin-bottom: 1rem;
+  }
+  &__Espacio {
+    margin-bottom: 1rem;
   }
   &__Sold {
     @include estiloTexto($texto - 0.2, 400);
@@ -63,7 +60,7 @@
     top: -80px;
     text-align: center;
     vertical-align: middle;
-    
+
     transform: rotate(-20deg);
     & p {
       line-height: inherit;
@@ -78,10 +75,19 @@
 
 @media (max-width: 992px) {
   .agendaTitle {
-    font-size: 3rem;
     text-align: center;
+    height: 85vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     a {
       font-size: 0.8rem;
+    }
+    h1 {
+      font-size: 8vh;
+      line-height: 8vh;
     }
   }
   .agenda {
@@ -91,15 +97,12 @@
     }
     &__Tag {
       display: none;
-      &--mes {
-        margin-bottom:0;
-      }
     }
-    &__mes {
+    &__Mes {
       @extend %anchoMobile;
       border-top: 0;
     }
-    &__dia {
+    &__Dia {
       @extend %anchoMobile;
       p {
         font-size: 1rem;

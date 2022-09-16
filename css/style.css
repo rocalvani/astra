@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Playfair+Display:ital@0;1&display=swap");
 /* VARIABLES */
-.cardsDesc__desc, .agenda__mes, .agenda__dia {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:ital@1&display=swap");
+.cardsDesc__desc, .agenda__Mes, .agenda__Dia {
   width: 24%; }
 
 .nav-item a, .nav-item a:hover, .footer ul {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
-  color: white;
-  font-family: lato; }
+  font-family: lato;
+  font-weight: 300; }
 
 .mainImg--faq, .mainImg--merch {
   background-size: cover;
@@ -31,7 +31,7 @@
   justify-content: space-between; }
 
 @media (max-width: 992px) {
-  .agenda__mes, .agenda__dia {
+  .agenda__Mes, .agenda__Dia {
     width: 100%;
     height: auto;
     margin: 0;
@@ -57,6 +57,9 @@
 .navbar {
   width: 100%;
   --bs-navbar-toggler-border-color: #c2aa7a; }
+
+.nav-item .nav-link--active {
+  font-weight: 700; }
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end; }
@@ -187,14 +190,23 @@
   font-family: lato; }
   .mainInput:focus-visible {
     outline: 0; }
+  .mainInput::placeholder {
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: lato; }
 
 .inputSubmit {
   background-color: black;
   border: 0px;
+  transition: .5s;
   color: white;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: lato; }
+  .inputSubmit:hover {
+    color: #c2aa7a;
+    transition: .5s; }
 
 /* BOTON ENTRADAS */
 .ticketButton {
@@ -245,7 +257,7 @@
       background-image: none;
       line-height: 10vh !important; }
     .mainImg--faq {
-      height: 10vh;
+      height: 16vh;
       background-image: none; }
       .mainImg--faq h1 {
         line-height: 5vh !important; }
@@ -261,14 +273,16 @@
     border-radius: 10rem;
     margin-top: 1rem; }
     .ticketButton p {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-weight: 400; }
     .ticketButton img {
       display: none; }
   .inputSubmit {
     font-size: 1.2rem; }
   .faqTitle {
     font-size: 6vh !important;
-    line-height: 6vh; } }
+    line-height: 6vh;
+    padding: 5vh 0; } }
 
 .cardsDesc {
   display: flex;
@@ -386,9 +400,7 @@
     padding-top: 2rem; }
   .agenda h4 {
     font-size: 1.6rem; }
-  .agenda__dia p {
-    line-height: 1.2rem; }
-  .agenda__dia h3 {
+  .agenda__Dia h3 {
     font-size: 0.7rem;
     background-color: #030516;
     padding: 0.8rem;
@@ -398,9 +410,9 @@
     line-height: 0.7rem;
     text-transform: uppercase; }
   .agenda__Tag {
-    line-height: 2rem; }
-    .agenda__Tag--Mes {
-      margin-bottom: 3px; }
+    margin-bottom: 1rem; }
+  .agenda__Espacio {
+    margin-bottom: 1rem; }
   .agenda__Sold {
     color: white;
     font-size: 0.8rem;
@@ -420,21 +432,27 @@
 /* AGENDA */
 @media (max-width: 992px) {
   .agendaTitle {
-    font-size: 3rem;
-    text-align: center; }
+    text-align: center;
+    height: 85vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .agendaTitle a {
       font-size: 0.8rem; }
+    .agendaTitle h1 {
+      font-size: 8vh;
+      line-height: 8vh; }
   .agenda {
     flex-direction: column; }
     .agenda h2 {
       font-size: 2rem; }
     .agenda__Tag {
       display: none; }
-      .agenda__Tag--mes {
-        margin-bottom: 0; }
-    .agenda__mes {
+    .agenda__Mes {
       border-top: 0; }
-    .agenda__dia p {
+    .agenda__Dia p {
       font-size: 1rem;
       line-height: 1.2rem; }
     .agenda__Sold p {
@@ -451,7 +469,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     height: auto;
     position: sticky;
     top: 15%; }
@@ -658,8 +676,10 @@
   .contact label {
     color: white;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 0;
     font-family: lato; }
+  .contact textarea {
+    resize: none; }
 
 .image {
   overflow: hidden;
@@ -728,6 +748,12 @@
 ul {
   margin-bottom: 0; }
 
+p {
+  margin-bottom: 0; }
+
+strong {
+  font-weight: normal; }
+
 .body {
   background-color: black;
   background-image: url(../img/bgimg_1-8.png);
@@ -738,9 +764,11 @@ ul {
     line-height: 1px; }
   .body a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    transition: .5s; }
     .body a:hover {
-      color: white; }
+      color: #c2aa7a;
+      transition: .5s; }
   .body h1 {
     line-height: inherit; }
 
